@@ -1,0 +1,19 @@
+[package]
+name = "aul2madb"
+version = "0.0.2"
+authors = ["Minoru Kobayashi <unknownbit@gmail.com>"]
+description = "Apple Unified Logs converter for ma2tl"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+macos-unifiedlogs = {git = "https://github.com/mandiant/macos-UnifiedLogs"}
+clap = { version = "4.*", features = ["derive"]}
+csv = "1.*"
+chrono = "0.4.*"
+simplelog = "0.12.1"
+rusqlite = "*"
+# csv = "1.2.1"
+# log = "0.4.17"
+dunce = "1.*"
